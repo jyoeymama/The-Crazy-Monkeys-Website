@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Crazy Monkes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffd700;
+        }
+        
+        .header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .monkey-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+        }
+        
+        .monkey-card:nth-child(even) {
+            transform: rotate(1deg);
+        }
+        
+        .banana-button {
+            background-color: #ffeb3b;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: block;
+            margin: 2rem auto;
+        }
+        
+        .banana-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🐒 The Crazy Monkeys 🐒</h1>
+        <p>Welcome to the wildest bunch in the jungles of Gorilla Tag!</p>
+    </div>
+    
+    <div class="content">
+        <div class="monkey-card">
+            <h2>🍌 Meet The Gang 🍌</h2>
+            <p>We're a bunch of banana loving, Tree swinging, Wall running, Bunch of monkeys that dominate gorilla tag </p>
+        </div>
+        
+        <div class="monkey-card">
+            <h2>🌴 Our Jungle Home 🌴</h2>
+            <p>Deep in the heart of the wildest jungle, you'll find our treehouse headquarters based in the gorilla tag code tcm. Tcm is the code in gorilla tag where we host our tryouts and hang out. </p>
+        </div>
+        
+        <div class="monkey-card">
+            <h2>🎪 Monkey Activities 🎪</h2>
+            <p>Join us for:</p>
+            <ul>
+                <li>Destroying Our Competition</li>
+                <li>Having Fun</li>
+                <li>Extreme Monkey Buisness</li>
+                <li>Tree Top Tag</li>
+                <li>And Getting Better</li>
+            </ul>
+        </div>
+        
+        <button class="banana-button">Get Bananas! 🍌</button>
+    </div>
+    
+    <div class="footer">
+        <p>2024 The Crazy Monkeys - Going Bananas Since Forever!</p>
+    </div>
+</body>
+</html>
